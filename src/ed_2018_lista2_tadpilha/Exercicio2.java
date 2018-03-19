@@ -8,26 +8,36 @@ public class Exercicio2 {
     
     private Pilha Inverter(Pilha pilha){
         Pilha pilhaAux = new Pilha();
-        
-        while(pilha.isEmpty()==false){
-            pilhaAux.Push(pilha.Topo());
-            pilha.Pop();
+        Pilha pilhaAux1 = new Pilha();
+        pilhaAux1=pilha;
+        while(pilhaAux1.isEmpty()==false){
+            pilhaAux.Push(pilhaAux1.Topo());
+            pilhaAux1.Pop();
         }
-        return pilha;
+        return pilhaAux;
     }
 
     public void Exercicio2() {
-        Pilha pilha1 = new Pilha();
+        Pilha pilhaP = new Pilha();
+        Pilha pilha2 = new Pilha();
         
-        for(int i = 0; i<20;i++){
-            pilha1.Push(i);
+        for(int i = 0; i<3;i++){
+            pilhaP.Push(i);
         }
-        pilha1=Inverter(pilha1);
-        pilha1=Inverter(pilha1);
+        pilha2=pilhaP;
+        System.out.println("Pilha original é:");
+        while(pilha2.isEmpty()==false){
+            System.out.println(pilha2.Topo());
+            pilha2.Pop();
+        }
+
+        pilhaP=Inverter(pilhaP);
+        pilhaP=Inverter(pilhaP);
+        System.out.println("Pilha invertida é:");
         
-        while(pilha1.isEmpty()==false){
-            System.out.println(pilha1.Topo());
-            pilha1.Pop();
+        while(pilhaP.isEmpty()==false){
+            System.out.println(pilhaP.Topo());
+            pilhaP.Pop();
         }
         
 

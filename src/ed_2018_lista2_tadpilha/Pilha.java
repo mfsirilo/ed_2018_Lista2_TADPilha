@@ -1,7 +1,7 @@
 package ed_2018_lista2_tadpilha;
 public class Pilha {
 
-    public int tam = 100;
+    public int tam = 5;
     public Object vetor[] = new Object[tam];
     public int posicaoPilha = -1;
 

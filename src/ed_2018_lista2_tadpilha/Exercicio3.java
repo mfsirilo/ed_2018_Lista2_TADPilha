@@ -6,9 +6,16 @@ a) Imprimir o texto em ordem inversa
 b) Verificar se o texto e um palindromo. Ignore espaços e pontos.
 
 */
+
+import java.util.*;
 public class Exercicio3 {
 
     public void Exercicio3() {
+        Scanner scan = new Scanner(System.in);
+        
+        String texto = scan.next();
+        
+        
 
     }
 
