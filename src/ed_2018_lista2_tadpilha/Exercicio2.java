@@ -24,12 +24,13 @@ public class Exercicio2 {
         
         for(int i = 0; i<3;i++){
             pilhaP.Push(i);
+            pilha2.Push(i);
         }
-        pilha2=pilhaP;
+        //pilha2=pilhaP;
         
         System.out.println("Pilha original é:");
         while(pilha2.isEmpty()==false){
-            System.out.print(pilha2.Topo());
+            System.out.print(pilha2.Topo()+" ");
             pilha2.Pop();
         }
 
@@ -37,6 +38,8 @@ public class Exercicio2 {
         
         pilhaP=Inverter(pilhaP);
         System.out.println("Pilha invertida é:");
+        
+        System.out.println("");
         
         while(pilhaP.isEmpty()==false){
             System.out.print(pilhaP.Topo());
