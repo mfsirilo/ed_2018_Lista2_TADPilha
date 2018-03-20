@@ -10,7 +10,7 @@ b) Verificar se o texto e um palindromo. Ignore espaços e pontos.
 import java.util.*;
 public class Exercicio3 {
     
-    public void descriptografia(Pilha pilha2){
+    public void dezinversogramentadoramento(Pilha pilha2){
         Pilha aux = new Pilha();
         aux=pilha2;
         while(!aux.isEmpty()){
@@ -33,7 +33,7 @@ public class Exercicio3 {
             pilha1.Push(texto.charAt(i));
         }
 
-        descriptografia(pilha1);
+        dezinversogramentadoramento(pilha1);
 
         for(int i=0; i < texto.length();i++){
             if(texto.charAt(i)==(' ')){
