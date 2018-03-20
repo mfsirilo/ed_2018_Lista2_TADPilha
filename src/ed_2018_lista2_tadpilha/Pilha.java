@@ -1,7 +1,7 @@
 package ed_2018_lista2_tadpilha;
 public class Pilha {
 
-    public int tam = 5;
+    public int tam = 100;
     public Object vetor[] = new Object[tam];
     public int posicaoPilha = -1;
 
@@ -10,8 +10,8 @@ public class Pilha {
         if (isFull()) {
             System.out.println("A pilha esta cheia");
         }
-        ++posicaoPilha;
-        this.vetor[posicaoPilha] = valor;
+        //++posicaoPilha;
+        this.vetor[++posicaoPilha] = valor;
     }
 
     /* desempilhando */
